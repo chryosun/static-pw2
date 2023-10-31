@@ -1,0 +1,34 @@
+@primary-bg-color: #102e4a;
+@primary-tx-color:#fff;
+@secondary-bg-color:#fff;
+@secondary-tx-color:#000;
+@primary-shadow: #000;
+
+@sizes: {
+    phone: 360px;
+    tablet: 760px;
+    desktop: 1024px;
+    widescreen: 1200px;
+}
+
+@sizes-prf: {
+    phone: s;
+    tablet: m;
+    desktop: l;
+    widescreen: xl;
+}
+
+//Siempre declarar Mixins despues de declarar variables
+@import "helpers.less";
+@import "grid.less";
+@import "landing.less";
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+    .no-padding-margin();
+    background-color: @primary-bg-color;
+    color: @primary-tx-color;
+}
